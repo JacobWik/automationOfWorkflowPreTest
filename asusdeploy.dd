@@ -1,0 +1,178 @@
+
+REM =========================================
+REM ASUS BIOS Automation (DuckyScript 1.0)
+REM =========================================
+
+REM --- Initial idle (20 seconds) ---
+DELAY 1000
+
+REM =========================================
+REM Press DEL every 4 seconds for 40 seconds
+REM (10 presses total)
+REM =========================================
+
+DELETE
+DELAY 4000
+DELETE
+DELAY 4000
+DELETE
+DELAY 4000
+DELETE
+DELAY 4000
+DELETE
+DELAY 4000
+DELETE
+DELAY 4000
+DELETE
+DELAY 4000
+DELETE
+DELAY 4000
+DELETE
+DELAY 4000
+DELETE
+
+REM =========================================
+REM Enter ASUS advanced menu
+REM =========================================
+
+DELAY 1000
+F7
+DELAY 1000
+
+REM =========================================
+REM Move RIGHT 4 times
+REM =========================================
+
+RIGHT
+DELAY 300
+RIGHT
+DELAY 300
+RIGHT
+DELAY 300
+RIGHT
+DELAY 300
+RIGHT
+DELAY 300
+
+REM =========================================
+REM Move DOWN 3 times
+REM =========================================
+
+DOWN
+DELAY 300
+DOWN
+DELAY 300
+DOWN
+DELAY 300
+
+REM =========================================
+REM Press ENTER 6 times
+REM =========================================
+
+ENTER
+DELAY 600
+DOWN
+DELAY 600
+ENTER
+DELAY 600
+ENTER
+DELAY 600
+ENTER
+DELAY 600
+ENTER
+DELAY 600
+ENTER
+
+REM =========================================
+REM Wait 3 minutes
+REM =========================================
+
+DELAY 180000
+TAB
+DELAY 600
+TAB
+DELAY 600
+ENTER
+
+REM --- select Webhallen and select coa 11 ---
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+TAB
+DELAY 600
+SPACE
+
+REM -- GO back 10 steps and enter for OA 11 --
+DELAY 600
+SHIFT TAB
+DELAY 600
+SHIFT TAB
+DELAY 600
+SHIFT TAB
+DELAY 600
+SHIFT TAB
+DELAY 600
+SHIFT TAB
+DELAY 600
+SHIFT TAB
+DELAY 600
+SHIFT TAB
+DELAY 600
+SHIFT TAB
+DELAY 600
+SHIFT TAB
+DELAY 600
+SHIFT TAB
+DELAY 600
+ENTER
+
+REM -- Wait 30 minutes
+DELAY 1800000 
+
+REM =========================================
+REM Launch AHK automation from USB (E:\)
+REM =========================================
+
+DELAY 15000
+
+GUI r
+DELAY 1000
+STRING E:\start_occt.exe
+DELAY 500
+ENTER
+
+
